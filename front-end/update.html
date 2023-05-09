@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Atualize seu depoimento</title>
+</head>
+
+<body>
+    <main>
+        <div class="content">
+
+            <div class="container">
+                <div class="cont_folhas">
+                    <img src="assets/rosario.png" alt="folhasdevinheira" class="folhas folhas_esquerda">
+                </div>
+                <div class="card2">
+                    <div class="img_logo">
+                        <img class="logo" src="assets/cidade-do-vaticano.png" alt="">
+                    </div>
+                    <div class="imputs">
+                        <div class="input-container2">
+                            <input type="text" id="id" name="id" value="" placeholder="Digite o ID para a alteraçao"class="tex-input">
+                            <input type="text" id="nome" name="nome" placeholder="Digite o novo Nome" class="text-input">
+                            <input type="email" id="email" name="email" placeholder="Digite o novo E-mail" class="text-input">
+                            <input type="text" id="depoimento" name="depoimento" placeholder="Modifique seu depoimento."
+                                class="text-input">
+                            <button class="btn" type="submit" onclick="atualizarDados()">Atualizar Dados</button>
+                            <a class="junte-se" href="depoimentos.html">Todos os depoimentos:
+                                <span>Clique Aqui!</span></a>
+                        </div>
+                    </div>
+                </div>
+                <class class="cont_folhas">
+                    <img src="assets/rosario.png" alt="folhasdevinheira" class="folhas folhas_rotate">
+                </class>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="puxandoAPI/updateaxios.js"></script>
+    <script src="puxandoAPI/listandoAxios.js"></script>
+
+</body>
+
+</html>
