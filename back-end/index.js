@@ -21,14 +21,15 @@ conexaodb
     })
 
 
-// API'S
 
+
+//API'S
 app.get("/", (req, res) => {
     res.send("hi")
 })
 
 
-//API PARA CADASTRO
+//API PARA CADASTRAR
 app.post("/enviardados", (req, res) => {
     const { nome, email, depoimento } = req.body
 
@@ -45,7 +46,7 @@ app.post("/enviardados", (req, res) => {
 
 })
 
-//Exibir Dados
+//API PARA EXIBIÇÃO DE DADOS
 app.get("/depoimentos", (req, res) => {
     Testemunha.findAll({
     }).then((Testemunhas) => {
@@ -56,10 +57,7 @@ app.get("/depoimentos", (req, res) => {
     })
 })
 
-//Update
-
-
-
+//API PARA ATUALIZAR OS DADOS EXISTENTES
 app.put('/depoimentos/update/:id', (req, res) => {
     const id = req.params.id;
     const { nome, email, depoimento } = req.body;
@@ -77,7 +75,7 @@ app.put('/depoimentos/update/:id', (req, res) => {
         });
 });
 
-//Delete
+//API PARA EXCLUSÃO DE DADOS EXISTENTES
 app.delete('/depoimentos/delete/:id', (req, res) => {
     const id = req.params.id;
 
