@@ -23,7 +23,7 @@
                     </div>
                     <div class="imputs">
                         <div class="input-container2">
-                            <input type="text" id="id" name="id" value="" placeholder="Digite o ID para a alteraçao"class="tex-input">
+                            <input type="hidden" id="id" name="id" value="" placeholder="Digite o ID para a alteraçao"class="tex-input">
                             <input type="text" id="nome" name="nome" placeholder="Digite o novo Nome" class="text-input">
                             <input type="email" id="email" name="email" placeholder="Digite o novo E-mail" class="text-input">
                             <input type="text" id="depoimento" name="depoimento" placeholder="Modifique seu depoimento."
@@ -31,6 +31,9 @@
                             <button class="btn" type="submit" onclick="atualizarDados()">Atualizar Dados</button>
                             <a class="junte-se" href="depoimentos.html">Todos os depoimentos:
                                 <span>Clique Aqui!</span></a>
+                                <a class="junte-se" href="index.html">Voltar para Página de Cadastros
+                                    <span>Clique Aqui!</span></a>
+    
                         </div>
                     </div>
                 </div>
@@ -43,8 +46,10 @@
     </main>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scriptForms.js"></script>
     <script src="puxandoAPI/updateaxios.js"></script>
-    <script src="puxandoAPI/listandoAxios.js"></script>
+
+        
 
 </body>
 

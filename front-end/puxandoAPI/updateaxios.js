@@ -1,3 +1,4 @@
+
 function atualizarDados() {
     const id = document.getElementById("id").value;
     const nome = document.getElementById("nome").value;
@@ -19,3 +20,4 @@ function atualizarDados() {
             alert('Erro ao atualizar dados');
         });
 }
+
