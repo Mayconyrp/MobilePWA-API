@@ -57,6 +57,9 @@ app.get("/depoimentos", (req, res) => {
 })
 
 //Update
+
+
+
 app.put('/depoimentos/update/:id', (req, res) => {
     const id = req.params.id;
     const { nome, email, depoimento } = req.body;
@@ -83,6 +86,7 @@ app.delete('/depoimentos/delete/:id', (req, res) => {
     })
         .then(() => {
             res.status(204).send();
+            res.send("Deletado com sucesso!")
         })
         .catch((error) => {
             console.log(error);
